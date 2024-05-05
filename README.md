@@ -10,6 +10,18 @@ We partition the article/theme case law guides into two distinct splits: one exc
 
 The former, reserved for testing, exposes the model to previously encountered themes/articles, but with new queries. The latter group is further divided into training (2230 pairs), validation (302 pairs), and test (480 pairs) sets. The test set within the 'Seen article/theme, Seen Query' category assesses the model’s comprehension of familiar legal concepts on new judgments in the test set.
 
+## Dataset structure
+
+File court_data.pkl has the following columns:
+    - id: judgmenet ECHR id
+    - par_num: number of the paragraph
+    - paragraph: actual paragraph content
+
+For the other files we have: 
+    - id: fjudgment ECHR id that was cited.
+    - context2: The query with the location of the citations inside the Judgement section.
+    - joined: Joined list of paragraph numbers that were cited inside the Judgement section
+
 ### Languages
 
 English
