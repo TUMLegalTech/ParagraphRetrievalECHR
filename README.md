@@ -13,14 +13,14 @@ The former, reserved for testing, exposes the model to previously encountered th
 ## Dataset structure
 
 File court_data.pkl has the following columns:
-    - id: judgmenet ECHR id
-    - par_num: number of the paragraph
-    - paragraph: actual paragraph content
+- id: judgmenet ECHR id
+- par_num: number of the paragraph
+- paragraph: actual paragraph content
 
 For the other files we have: 
-    - id: fjudgment ECHR id that was cited.
-    - context2: The query with the location of the citations inside the Judgement section.
-    - joined: Joined list of paragraph numbers that were cited inside the Judgement section
+- id: fjudgment ECHR id that was cited.
+- context2: The query with the location of the citations inside the Judgement section.
+- joined: Joined list of paragraph numbers that were cited inside the Judgement section
 
 ### Languages
 
